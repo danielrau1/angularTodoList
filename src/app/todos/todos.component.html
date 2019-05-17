@@ -1,0 +1,11 @@
+
+<!--[11.1]-->
+                  <!--[11.6]-->
+<app-add-todo       (addTodo)="addTodo($event)"    ></app-add-todo>
+
+
+                                        <!--[2], (Q1)          [8.4]      -->
+<app-todo-item *ngFor="let todo of todos" [todo1]="todo"      (deleteTodo)="deleteTodo($event)"        >
+
+
+</app-todo-item>
